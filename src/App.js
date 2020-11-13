@@ -42,7 +42,7 @@ class App extends Component {
       noWeeks = parseInt(diffDuration.asWeeks()) * -1;
     }
 
-    // update state
+    // update state 
     let data = this.state.data;
     data.noWeeks = noWeeks;
     this.setState({ data });
