@@ -10,9 +10,7 @@ class WeekBox extends Component {
   }
 
   getClasses() {
-    let classes = "weekBox";
-    classes += this.props.weekBox.checked ? " checked" : "";
-    return classes;
+    return "weekBox " + "weekBox-color-" + this.props.weekBox.color;
   }
 }
 

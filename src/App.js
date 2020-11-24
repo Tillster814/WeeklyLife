@@ -53,14 +53,19 @@ class App extends Component {
     let weekBoxes = [];
     const averageLifeSpanWeeks = this.state.data.averageLifeSpanYears * 52;
 
+    let color = 0;
+    
     for (let index = 0; index < averageLifeSpanWeeks; index++) {
-      let checked = 0;
 
-      if (index <= this.state.data.noWeeks) {
-        checked = 1;
+      // if (index <= this.state.data.noWeeks) {
+      //   color = 1;
+      // }
+
+      if (index % 52 == 0) {
+        color++;
       }
 
-      weekBoxes.push({ id: index, checked: checked });
+      weekBoxes.push({ id: index, color: color });
     }
 
     this.setState({ weekBoxes: weekBoxes, formFields: this.state.formFields });

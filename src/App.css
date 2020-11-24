@@ -52,6 +52,18 @@
   display: inline-block;
 }
 
-.weekBox.checked {
+.weekBox-color-0 {
+  background-color: none;
+}
+
+.weekBox-color-1 {
   background-color: #ff6565;
+}
+
+.weekBox-color-2 {
+  background-color: #4a47ff;
+}
+
+.weekBox-color-3 {
+  background-color: #56fa7f;
 }

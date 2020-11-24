@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Results extends Component {
   state = {};
   render() {
-    return (
+    return (this.props.data.noWeeks ?
       <React.Fragment>
         <div className="row">
           <label className="col-sm-5 col-form-label">
@@ -18,7 +18,7 @@ class Results extends Component {
             weeks left (if you live to 90)
           </label>
         </div>
-      </React.Fragment>
+      </React.Fragment> : "" 
     );
   }
 }
